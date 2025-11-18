@@ -20,3 +20,24 @@ button.addEventListener('click', () => {
     pNodeList[0].textContent = 'Hola'
   }
 })
+
+const imagen = document.querySelector('img')
+
+console.log(imagen.alt)
+
+const btnAdd = document.getElementById('add')
+
+const contenedor = document.getElementById('contenedor')
+
+const btnConContador = () => {
+  let contador = 1
+  btnAdd.onclick = () => {
+    const p = document.createElement('p')
+    p.textContent = `Texto Numero ${contador}`
+    contador++
+
+    contenedor.appendChild(p)
+  }
+}
+
+btnConContador()
