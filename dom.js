@@ -27,7 +27,7 @@ console.log(imagen.alt)
 
 const btnAdd = document.getElementById('add')
 
-const contenedor = document.getElementById('contenedor')
+const contenedor = document.getElementsByClassName('a')
 
 const btnConContador = () => {
   let contador = 1
@@ -36,7 +36,7 @@ const btnConContador = () => {
     p.textContent = `Texto Numero ${contador}`
     contador++
 
-    contenedor.appendChild(p)
+    contenedor[0].appendChild(p)
   }
 }
 
